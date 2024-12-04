@@ -15,7 +15,9 @@ print()
 
 SIZE = 9
 
-print('Soal 1')
+
+
+print('Soal 1 - Fibonacci')
 print()
 f1 = 1
 f2 = 1
@@ -29,7 +31,9 @@ print()
 print()
 print()
 
-print('Soal 2')
+
+
+print('Soal 2 - Fibonacci 3')
 print()
 f1 = 1
 f2 = 1
@@ -46,7 +50,8 @@ print()
 print()
 
 
-print('Soal 3')
+
+print('Soal 3 - FPB & KPK')
 print()
 a = 120
 b = 36
@@ -69,6 +74,7 @@ print()
 print()
 
 
+
 print('Soal 4')
 print()
 for row in range(1, SIZE + 1):
@@ -89,3 +95,78 @@ for row in range(1, SIZE + 1):
           print(' ', end = '')
     print()
 print()
+print()
+
+
+
+print('Soal 5')
+print()
+for row in range(1, SIZE + 1):
+    for col in range(1, SIZE + 1):
+        if (row == 1 or row == SIZE or col == 1 or col == SIZE or row == 2 or row == 8 or col == 2 or col == 8):
+            print('1', end = '')
+        elif ((row == 3 or row == 7) and 3 <= col <= 7) or ((col == 3 or col == 7) and 3 <= row <= 7):
+            print('2', end = '')
+        elif ((row == 4 or row == 6) and 4 <= col <= 6) or ((col == 4 or col == 6) and 4 <= row <= 6):
+            print('3', end = '')
+        elif (row == 5 and col == 5):
+            print('5', end = '')
+        else:
+            print(' ', end = '')
+    print()
+print()
+print()
+
+
+
+print('Soal 6')
+print()
+for row in range(1, SIZE + 1):
+    for col in range(1, SIZE + 1):
+        if (row == 1 or row == SIZE or col == 1 or col == SIZE):
+            print('1', end = '')
+        elif ((row == 3 or row == 7) and 3 <= col <= 7) or ((col == 3 or col == 7) and 3 <= row <= 7):
+            print('3', end = '')
+        elif (row == 5 and col == 5):
+            print('5', end = '')
+        else:
+            print(' ', end = '')
+    print()
+print()
+print()
+
+
+
+print('Soal 7')
+print()
+for row in range(1, SIZE + 1):
+    for col in range(1, SIZE + 1):
+        if (row == 1 or row == SIZE or col == 1 or col == SIZE) or ((row == 3 or row == 7) and 3 <= col <= 7) or ((col == 3 or col == 7) and 3 <= row <= 7):
+            print('1', end = '')
+        elif (row == 5 and col == 5):
+            print('2', end = '')
+        else:
+            print(' ', end = '')
+    print()
+print()
+print()
+
+
+
+print('Soal 8')
+print()
+for row in range(1, SIZE + 1):
+    for col in range(1, SIZE + 1):
+        if (row == 1 or row == SIZE or col == 1 or col == SIZE) or ((row == 3 or row == 7) and 3 <= col <= 7) or((col == 3 or col == 7) and 3 <= row <= 7):
+            print('1', end = '')
+        elif ((row == 2 or row == 8) and 2 <= col <= 8) or ((col == 2 or col == 8) and 2 <= row <= 8):
+            print('A', end = '')
+        elif ((row == 4 or row == 6) and 4 <= col <= 6) or ((col == 4 or col == 6) and 4 <= row <= 6):
+            print('B', end = '')
+        elif row == 5 and col == 5:
+            print('2', end = '')
+        else:
+            print(' ', end = '')
+    print()
+print()
+
